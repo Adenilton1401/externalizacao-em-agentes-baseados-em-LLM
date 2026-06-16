@@ -17,5 +17,12 @@ Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and
 
 ### Links
 https://www.ibm.com/br-pt/think/topics/artificial-intelligence
+
 https://www.anthropic.com/news/model-context-protocol
+
+https://blog.dsacademy.com.br/alem-do-prompt-um-guia-definitivo-sobre-context-engineering-engenharia-de-contexto/
+
+https://www.anthropic.com/news/model-context-protocol
+
+https://www.ibm.com/br-pt/think/topics/artificial-intelligence
 
