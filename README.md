@@ -28,5 +28,22 @@ https://www.ibm.com/br-pt/think/topics/artificial-intelligence
 
 ## Engenharia de Prompts e "Cicatrizes":
 
+### Zero-Shot Prompting:
+o que é janela de contexto?
+
+RESPOSTA: A janela de contexto é o espaço efêmero de entrada de dados onde um grande modelo de linguagem (LLM) recebe, mantém e processa informações durante uma interação ou etapa de raciocínio. Ela atua como uma superfície de trabalho na qual desenvolvedores e sistemas organizam instruções locais, esquemas de saída, regras de domínio e documentos recuperados para que o modelo possa agir sobre eles
+. Segundo os documentos fornecidos, a janela de contexto possui as seguintes características e limitações centrais no design de agentes autônomos:
+É o recurso mais escasso do sistema: A janela de contexto é finita e custosa em larga escala. Elementos como recuperação de memórias passadas, carregamento de habilidades, chamadas de ferramentas e os próprios traços de raciocínio do modelo competem simultaneamente pelo mesmo orçamento limitado de tokens
+.
+É inerentemente efêmera: Os LLMs são geradores sem estado (stateless), o que significa que cada nova chamada se inicia com um contexto limpo
+. A menos que o estado da tarefa seja explicitamente salvo em um armazenamento externo, todo o progresso ou histórico de conversas desaparece assim que a sessão termina ou é interrompida, resultando em "amnésia parcial"
+.
+É vulnerável à degradação de desempenho: Embora a capacidade das janelas de contexto tenha se expandido drasticamente (indo de 2 mil para mais de 100 mil tokens), inserir informações em excesso pode degradar a performance em vez de melhorá-la
+. O excesso de dados causa ruído e desencadeia o fenômeno de "lost in the middle" (perdido no meio), onde a capacidade de atenção do modelo falha e a precisão de recuperação cai drasticamente para informações posicionadas no centro de um prompt longo
+.
+Tentar forçar o modelo a carregar todo o seu histórico, ferramentas e raciocínio dentro de uma janela de contexto efêmera e limitada cria um problema estrutural de continuidade
+. É justamente por causa das limitações da janela de contexto que os sistemas de IA modernos passaram a focar na externalização: transferir esse peso cognitivo para infraestruturas externas (como sistemas de memória persistentes e bibliotecas de habilidades), permitindo uma curadoria seletiva e dinâmica do que realmente precisa ser inserido na janela de contexto a cada nova decisão
+
+
 
 ## Miniguia de Estudo:
