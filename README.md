@@ -16,5 +16,8 @@ Para auxiliar nesse processo de aprendizagem, a utilização de um NotebookLM qu
 Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering - disponível em: https://arxiv.org/pdf/2604.08224
 
 ### Links
+https://www.ibm.com/br-pt/think/topics/artificial-intelligence
+https://cloud.google.com/discover/what-are-ai-agents?hl=pt-BR
+https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/inteligencia-artificial-1/publicacoes/cartilha-ia-generativa
 https://www.anthropic.com/news/model-context-protocol
 
