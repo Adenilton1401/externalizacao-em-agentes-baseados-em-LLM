@@ -12,4 +12,9 @@ Termos com agentes, engenharia de prompt, engenharia de contexto, memória, obse
 Para auxiliar nesse processo de aprendizagem, a utilização de um NotebookLM que centralize a definição de alguns desses termos pode ser uma ferramenta facilitadora por tazer cosigo recursos como resumos em áudio, apresentações, mapas mentais, cartões didáticos e outros.
 
 ## Curadoria de Fontes
+### PDFs
+Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering - disponível em: https://arxiv.org/pdf/2604.08224
+
+### Links
+https://www.anthropic.com/news/model-context-protocol
 
