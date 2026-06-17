@@ -46,6 +46,7 @@ Tentar forçar o modelo a carregar todo o seu histórico, ferramentas e raciocí
 
 ### Few-Shot Prompting
 Entrada: Crie uma lista de chave/valor para os principais elementos da janela de contexto seguindo o padão chave (elemento) -> Valor (conceito).
+
 Saída: "Instruções de Sistema / Prompt de Sistema -> O conjunto fundamental de regras e a definição da persona do modelo, que estabelecem o cenário, o comportamento esperado e as diretrizes que guiarão o LLM.
 
 Prompt do Usuário -> A tarefa ou pergunta imediata e específica fornecida pelo usuário, sendo o principal componente trabalhado na Engenharia de Prompt tradicional.
