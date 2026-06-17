@@ -59,7 +59,7 @@ Memória de Longo Prazo -> O armazenamento de conhecimento persistente ao longo 
 
 Ferramentas Disponíveis e Respostas de API -> As definições de funções e ferramentas externas que o modelo tem permissão para invocar, além dos resultados obtidos por essas chamadas que são reinseridos para a próxima etapa de raciocínio.
 
-Esquemas de Saída Estruturada -> As definições prévias do formato exigido para a resposta final (como JSON ou XML), servindo para guiar o modelo a produzir saídas previsíveis e legíveis por máquina.
+Esquemas de Saída Estruturada -> As definições prévias do formato exigido para a resposta final (como JSON ou XML), servindo para guiar o modelo a produzir saídas previsíveis e legíveis por máquina."
 
 
 ## Miniguia de Estudo:
