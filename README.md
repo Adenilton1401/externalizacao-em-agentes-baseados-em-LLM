@@ -61,5 +61,20 @@ Ferramentas Disponíveis e Respostas de API -> As definições de funções e fe
 
 Esquemas de Saída Estruturada -> As definições prévias do formato exigido para a resposta final (como JSON ou XML), servindo para guiar o modelo a produzir saídas previsíveis e legíveis por máquina."
 
+### Zero-Shot Prompting
+Entrada: Por que o harness funciona como uma camada de unificação?
+
+Saída: "O harness (ambiente de orquestração ou "chicote/arnês" de engenharia) funciona como uma camada de unificação porque ele fornece o ambiente de execução (runtime) contínuo que hospeda, coordena e governa todas as infraestruturas externalizadas de um modelo de linguagem, unindo a memória, as skills e os protocolos em um fluxo de trabalho coeso. Sem ele, esses módulos existiriam apenas como recursos isolados, carecendo de uma estrutura com princípios definidos para coordenar suas interações ao longo do tempo.
+Em vez de ser visto como um quarto tipo de externalização, o harness é a própria infraestrutura persistente que envolve o modelo e atua como seu "ambiente cognitivo". Ele desempenha essa função unificadora através das seguintes frentes:
+
+Orquestração do Ciclo do Agente (Agent Loop): O harness fornece a espinha dorsal temporal do sistema, alinhando de maneira contínua a percepção do ambiente, o acesso à memória, a seleção e execução de skills e o monitoramento de resultados. Ele define as rotas exatas pelas quais o LLM deve receber contexto, invocar ferramentas e interagir com o mundo.
+
+Superfícies de Operação e Governança: Um modelo fundacional por si só possui apenas a capacidade de inferência, mas não entende limites de infraestrutura. O harness unifica a operação através de três superfícies críticas: Permissão (sandboxing, isolamento de sistema de arquivos e redes), Controle (limites de recursão, teto de custos e timeouts) e Observabilidade (registro de traces de execução, logs estruturados e métricas de feedback). Isso garante que a atuação do agente seja sempre delimitada, segura e auditável.
+
+Gerenciamento do Orçamento da Janela de Contexto: Como a janela de contexto é o recurso compartilhado mais escasso do sistema, o harness atua como o alocador central. Ele orquestra o que entra no prompt em cada fase da execução, balanceando a injeção de históricos da memória, a carga progressiva de detalhes de uma skill e os esquemas dos protocolos, evitando que o modelo sofra com ruído de informações.
+
+Dessa forma, a unificação proporcionada pelo harness transforma a inteligência de um LLM. O modelo deixa de ser apenas um gerador de texto que tenta resolver toda a carga de trabalho de forma efêmera e se torna um agente autônomo governado, onde o estado temporal (memória), os procedimentos (skills) e as estruturas de comunicação (protocolos) operam de modo sincronizado e seguro
+
+
 
 ## Miniguia de Estudo:
