@@ -73,8 +73,36 @@ Superfícies de Operação e Governança: Um modelo fundacional por si só possu
 
 Gerenciamento do Orçamento da Janela de Contexto: Como a janela de contexto é o recurso compartilhado mais escasso do sistema, o harness atua como o alocador central. Ele orquestra o que entra no prompt em cada fase da execução, balanceando a injeção de históricos da memória, a carga progressiva de detalhes de uma skill e os esquemas dos protocolos, evitando que o modelo sofra com ruído de informações.
 
-Dessa forma, a unificação proporcionada pelo harness transforma a inteligência de um LLM. O modelo deixa de ser apenas um gerador de texto que tenta resolver toda a carga de trabalho de forma efêmera e se torna um agente autônomo governado, onde o estado temporal (memória), os procedimentos (skills) e as estruturas de comunicação (protocolos) operam de modo sincronizado e seguro
+Dessa forma, a unificação proporcionada pelo harness transforma a inteligência de um LLM. O modelo deixa de ser apenas um gerador de texto que tenta resolver toda a carga de trabalho de forma efêmera e se torna um agente autônomo governado, onde o estado temporal (memória), os procedimentos (skills) e as estruturas de comunicação (protocolos) operam de modo sincronizado e seguro."
 
+### Role-Playing (adoção de persona)
+Entrada: Aja como um experiente engenheiro de harness e descreva um workflow ótimo para um harness.
 
+Saída: "omo engenheiro de harness, minha premissa fundamental é que o modelo de linguagem (LLM) por si só não é o agente completo; ele é apenas o "motor cognitivo". A verdadeira inteligência e confiabilidade do sistema emergem do ambiente estruturado que orquestra suas ações
+. Para transformar a capacidade bruta do modelo em uma operação segura e contínua, o workflow ótimo de um harness deve alinhar dinamicamente a memória, as skills e os protocolos, governando cada etapa do processo.
+
+Abaixo, descrevo a arquitetura ideal desse ciclo de execução temporal (o Agent Loop), desde o recebimento de uma tarefa até a consolidação do aprendizado:
+
+1. Captura de Intenção e Gestão do Orçamento de Contexto Quando a solicitação do usuário chega, o harness não passa o texto livre imediatamente para o modelo. A primeira etapa é a captura e normalização da intenção, mapeando a solicitação para objetos de protocolo validados e checando as permissões iniciais
+. Neste momento, o harness atua como o alocador do orçamento da janela de contexto — que, como discutimos antes, é escassa e suscetível à degradação se sobrecarregada
+. Ele resume o histórico da conversa e limpa variáveis obsoletas, mantendo apenas o estado de trabalho ativo (o working context) e as abstrações relevantes na "memória quente".
+2. Recuperação de Estado (Memória) e Descoberta de Skills Em seguida, o harness consulta o sistema de memória para recuperar trajetórias passadas, regras do projeto e preferências do usuário aplicáveis à tarefa
+. Usando esses dados, o sistema busca no registro de skills quais procedimentos são adequados
+. Para otimizar o prompt, aplicamos a estratégia de divulgação progressiva (progressive disclosure): o harness insere no contexto apenas o nome, os pré-requisitos e o escopo da skill; o guia detalhado e as rotinas só são carregados se o modelo confirmar que aquele procedimento é necessário.
+3. O Ciclo de Raciocínio Governado (Agent Loop & Control Flow) Com a informação certa disponível, o agente inicia seu ciclo de perceber-recuperar-planejar-agir-observar
+. Como engenheiro, não posso confiar que o modelo saiba parar sozinho ou evitar loops infinitos. Por isso, o harness impõe controles de infraestrutura estritos sobre este loop:
+- Limites operacionais: Aplicamos limites de passos (step counts), profundidade máxima de recursão, tetos de custo financeiro e timeouts de segurança.
+- Isso define o "envelope operacional", garantindo que a deliberação do modelo ocorra sempre dentro de limites computacionais e financeiros aceitáveis.
+4. Binding de Protocolos, Sandboxing e Portões de Aprovação Quando o modelo decide realizar uma ação usando uma skill carregada, o harness deve traduzir essa intenção em realidade. Isso é feito vinculando a skill a uma interface executável governada por protocolos padronizados, como o Model Context Protocol (MCP) para ferramentas, ou protocolos de delegação (A2A) para se comunicar com subagentes
+. Nesta fase, a segurança é a prioridade:
+- Sandboxing: Se a ação altera arquivos ou exige chamadas de sistema, a execução é roteada para um ambiente isolado (sandbox), com restrições rígidas de rede e de sistema de arquivos.
+- Supervisão Humana (Human-in-the-loop): Para ações críticas ou irreversíveis (como manipulação de banco de dados ou envios de e-mail), o harness possui portões de aprovação, pausando a execução até que um operador humano valide o rastro de ações.
+5. Assimilação de Resultados, Observabilidade e Evolução Contínua A execução produzirá sucessos, dados brutos ou mensagens de erro. O harness assimila esses resultados e os normaliza, traduzindo-os de volta em um estado que atualiza a memória de longo e curto prazo
+. Simultaneamente, a camada de observabilidade entra em ação registrando logs estruturados de toda a trajetória: quais ferramentas falharam, os custos gerados e os ramos de decisão escolhidos.
+  
+É esse último passo que permite a evolução do sistema: os logs estruturados são destilados em novas memórias episódicas, que, mais tarde, podem ser usadas para revisar uma skill falha, alterar uma política de roteamento ou promover uma tática improvisada de sucesso em um novo procedimento operacional padrão.
+
+Em resumo, este fluxo garante que a carga de lidar com formatos sintáticos, limites computacionais, restrições de tempo e segurança permaneça no sistema de infraestrutura
+. O modelo de linguagem trabalha de forma central, mas focado exclusivamente na interpretação cognitiva, enquanto o harness funciona como seu corpo cibernético e seu supervisor rigoroso."
 
 ## Miniguia de Estudo:
